@@ -1,0 +1,7 @@
+Classify the following Python program as exactly one of:
+
+SYNTAX
+RUNTIME
+LOGIC
+
+Return only the label.

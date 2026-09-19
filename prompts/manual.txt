@@ -1,0 +1,13 @@
+Analyze the Python program and classify its defect as exactly one of the following:
+
+SYNTAX — The program cannot be parsed or compiled as valid Python.
+
+RUNTIME — The program is syntactically valid but raises an exception while executing.
+
+LOGIC — The program executes without raising an exception but produces behavior or output that does not match the intended result.
+
+Return exactly one label and nothing else:
+
+SYNTAX
+RUNTIME
+LOGIC

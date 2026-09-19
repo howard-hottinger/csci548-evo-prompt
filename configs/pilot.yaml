@@ -1,0 +1,31 @@
+experiment:
+  name: csci548_evolutionary_prompt_optimization
+  seed: 42
+
+model:
+  id: Qwen/Qwen2.5-Coder-7B-Instruct
+  dtype: bfloat16
+  device: cuda
+
+task:
+  labels:
+    - SYNTAX
+    - RUNTIME
+    - LOGIC
+
+generation:
+  do_sample: false
+  max_new_tokens: 8
+
+dataset:
+  split_by_family: true
+
+metrics:
+  - accuracy
+  - macro_f1
+
+conditions:
+  - baseline
+  - manual
+  - random_search
+  - evolutionary
