@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+
+results/
+logs/
+checkpoints/
+
+*.out
+*.err
+
+.DS_Store
